@@ -1,6 +1,9 @@
 ## Web-Server
 
 ## Introduction  这是一个HTTP服务器项目 基于C++  没事自己多琢磨  
+
+muduo是一个网络库，主要是来处理网络通信的，虽然也是做了一个http的例子。我们不同的地方是我主要是写的一个HTTP服务器，支持长短连接，cgi处理，静态页面处理；同时对具体业务和网络框架本身做了解耦，很方便的增加自己的cgi服务😝
+
 An implementation of HTTP server based on **c++11**, which is easily to add a Cgi instance. It can handle static resources, support HTTP long connections, and so on. We also implement the [Asynchronous Log](https://github.com/stepByStepToSky/ThreadPool-and-Asynchronous-log) to record the status of the server.
 
 Test page ：[ExampleCgi](http://106.54.211.174:9508/cgi-bin/example?name=lufan&id=2021), [LoginCgi](http://106.54.211.174:9508/cgi-bin/login) and [UploadCgi](http://106.54.211.174:9508/cgi-bin/uploadfile) 
